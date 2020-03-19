@@ -9,7 +9,8 @@ import styled from "styled-components";
 const MainAppContainer = styled.div`
    background-image: linear-gradient(to bottom, rgba(240, 248, 255), rgba(150, 248, 255));
    margin-top:0;
-
+   font-family: 'Baloo Chettan 2', cursive;
+  
 `;
 
 
@@ -17,7 +18,8 @@ function App() {
   return (
     <MainAppContainer>
       <Header />
-      <Body />  
+      <Body /> 
+       
     </MainAppContainer>
   );
 }

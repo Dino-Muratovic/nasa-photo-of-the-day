@@ -5,8 +5,7 @@ import { Container } from 'reactstrap'; // import from reactstrap
 //Heading styles
 const Heading = styled.h2`
         margin-top:5%;
-        margin-bottom:0; 
-        font-family: 'Baloo Chettan 2', cursive; 
+        margin-bottom:0;          
         text-align:center;            
 `;
 
@@ -19,11 +18,8 @@ const Footer = (props) => {
 
     return (            
         <Container fluid>
-          <Heading className="display-3">{props.value.date} &copy;{props.value.copyright}</Heading>                                 
-        </Container>
-
-        
-      
+          <Heading className="display-3">{props.value.date} &copy;{props.value.copyright}</Heading>                       
+        </Container>  
     )
 
 }

@@ -3,6 +3,11 @@ import styled from "styled-components"; // bring in styled library
 import { Badge } from 'reactstrap';
 
 
+const Heading = styled.h2`
+    text-align:center;
+`;
+
+
 // styling of the image
  const Image = styled.img`
    border-radius:10px;
@@ -22,7 +27,7 @@ const NasaContainer = (props) => {
     console.log(`this is props in NasaContainer `, props);   
     return (
         <div className="nasa-content-info">
-            <h2>{props.value.title}</h2> 
+            <Heading>{props.value.title}</Heading> 
             <Image src={props.value.url} alt={props.value.title}></Image>          
         </div>
     )

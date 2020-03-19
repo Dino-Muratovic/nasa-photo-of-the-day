@@ -15,6 +15,7 @@ const BodyContainer = styled.section`
     border-radius: 20px;
     border:2px ridge #a4d4ff;
     font-size:1.5rem;
+    
 `;
 
 // style the paragraph inside of that container
@@ -24,14 +25,17 @@ const ImageDesc = styled.p`
     text-align:center;
     margin:0 auto;
     letter-spacing:2px;
-    background-color:white;
+    background-color:${props => (props.primary ? "#fff" : "#a4d4ff")};
+    color: ${props => (props.primary ? "#a4d4ff" : "#fff")};
+    &:hover {
+        background-color:${props => (props.primary ? "#a4d4ff" : "#fff")};
+        color:${props => (props.primary ? "fff" : "#000")};
+    }
     padding:2%;
     border-radius: 20px;
-    font-family: 'Baloo Chettan 2', cursive;
+    font-size:1.8rem;
+    
 `;
-
-
-
 
 
 
